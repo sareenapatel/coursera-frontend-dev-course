@@ -1,7 +1,4 @@
 
-h2 {
-	margin-top: 0;
-}
 
 div > p {
 	text-align: justify;
@@ -9,9 +6,12 @@ div > p {
 
 .content-cell {
 	background-color: #BBDDBB;
-	margin-left: 15px;
-	margin-right: 15px;
+	margin-bottom: 15px;
 	padding: 10px 15px;
+}
+
+.content-cell h2 {
+	margin-top: -5px;
 }
 
 /* Not XS screen */
@@ -23,6 +23,16 @@ div > p {
 
 /* XS screen */
 @media (max-width:767px){
+	
+	.navbar-brand {
+		margin-left: 15px;
+	}
+	
+	.content-cell {
+		margin-left: 15px;
+		margin-right: 15px;
+	}
+	
 	#collapsable-nav {
 		background-color: #BBEABB;
 	}
@@ -39,5 +49,6 @@ div > p {
 	}
 	#nav-list li:hover{
 		font-weight: bold;
+		background-color: #BBDDBB;
 	}
 }
